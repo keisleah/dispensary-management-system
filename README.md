@@ -27,13 +27,19 @@ Open a terminal and navigate to the backend folder:
 cd dispensary-backend
 ```
 
-**1. Create a virtual environment**
+**1. Delete the old virtual environment.
+
+```bash
+rm -rf venv
+```
+
+**2. Create a virtual environment**
 
 ```bash
 python3 -m venv venv
 ```
 
-**2. Activate the virtual environment**
+**3. Activate the virtual environment**
 
 On macOS/Linux:
 ```bash
@@ -47,19 +53,19 @@ venv\Scripts\activate
 
 Your terminal prompt should now show `(venv)` at the start of the line.
 
-**3. Install the required Python packages**
+**4. Install the required Python packages**
 
 ```bash
 pip install -r requirements.txt
 ```
 
-**4. Set up environment variables**
+**5. Set up environment variables**
 
 ```bash
 cp .env.example .env
 ```
 
-**5. Run the backend server**
+**6. Run the backend server**
 
 ```bash
 python manage.py runserver
