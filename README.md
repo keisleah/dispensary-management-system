@@ -3,8 +3,7 @@
 ## Tech stack
 
 - **Backend:** Django, Graphene-Django (GraphQL API), JWT authentication, SQLite
-- **Frontend:** React (Vite), TypeScript, Apollo Client, Tailwind CSS, shadcn/ui, Zustand
-
+- **Frontend:** React (Vite), TypeScript, Apollo Client, Tailwind CSS, shadcn/ui, Zustand .
 ## Project structure
 
 ```
