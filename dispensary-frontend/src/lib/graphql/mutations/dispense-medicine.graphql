@@ -1,0 +1,10 @@
+mutation DispenseMedicine($medicineId: ID!, $quantity: Int!, $healthRecordId: ID) {
+  dispenseMedicine(medicineId: $medicineId, quantity: $quantity, healthRecordId: $healthRecordId) {
+    success
+    errors
+    dispensingRecord {
+      id
+      quantityDispensed
+    }
+  }
+}

@@ -1,0 +1,12 @@
+query AllMedicines {
+  allMedicines {
+    id
+    name
+    description
+    quantityInStock
+    unit
+    reorderLevel
+    expiryDate
+    isLowStock
+  }
+}

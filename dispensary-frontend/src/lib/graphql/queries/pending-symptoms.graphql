@@ -1,0 +1,15 @@
+query PendingSymptoms {
+  pendingSymptoms {
+    id
+    description
+    severity
+    reportedAt
+    student {
+      id
+      admissionNumber
+      user {
+        fullName
+      }
+    }
+  }
+}

@@ -1,0 +1,15 @@
+query AllStudents {
+  allStudents {
+    id
+    admissionNumber
+    dateOfBirth
+    gender
+    guardianName
+    guardianPhone
+    knownAllergies
+    user {
+      email
+      fullName
+    }
+  }
+}

@@ -1,0 +1,12 @@
+query MyProfile {
+  myProfile {
+    id
+    admissionNumber
+    dateOfBirth
+    gender
+    guardianName
+    guardianPhone
+    knownAllergies
+    isActive
+  }
+}

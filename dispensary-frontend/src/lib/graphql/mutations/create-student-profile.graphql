@@ -1,0 +1,24 @@
+mutation CreateStudentProfile(
+  $admissionNumber: String!
+  $dateOfBirth: Date
+  $gender: String
+  $guardianName: String
+  $guardianPhone: String
+  $knownAllergies: String
+) {
+  createStudentProfile(
+    admissionNumber: $admissionNumber
+    dateOfBirth: $dateOfBirth
+    gender: $gender
+    guardianName: $guardianName
+    guardianPhone: $guardianPhone
+    knownAllergies: $knownAllergies
+  ) {
+    success
+    errors
+    student {
+      id
+      admissionNumber
+    }
+  }
+}

@@ -1,0 +1,27 @@
+mutation UpdateStudentProfile(
+  $dateOfBirth: Date
+  $gender: String
+  $guardianName: String
+  $guardianPhone: String
+  $knownAllergies: String
+) {
+  updateStudentProfile(
+    dateOfBirth: $dateOfBirth
+    gender: $gender
+    guardianName: $guardianName
+    guardianPhone: $guardianPhone
+    knownAllergies: $knownAllergies
+  ) {
+    success
+    errors
+    student {
+      id
+      admissionNumber
+      dateOfBirth
+      gender
+      guardianName
+      guardianPhone
+      knownAllergies
+    }
+  }
+}

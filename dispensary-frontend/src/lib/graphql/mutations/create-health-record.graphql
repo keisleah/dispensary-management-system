@@ -1,0 +1,22 @@
+mutation CreateHealthRecord(
+  $studentId: ID!
+  $diagnosis: String
+  $treatmentNotes: String
+  $followUpRequired: Boolean
+  $followUpDate: Date
+) {
+  createHealthRecord(
+    studentId: $studentId
+    diagnosis: $diagnosis
+    treatmentNotes: $treatmentNotes
+    followUpRequired: $followUpRequired
+    followUpDate: $followUpDate
+  ) {
+    success
+    errors
+    healthRecord {
+      id
+      diagnosis
+    }
+  }
+}

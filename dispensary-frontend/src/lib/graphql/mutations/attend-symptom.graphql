@@ -1,0 +1,10 @@
+mutation AttendSymptom($symptomId: ID!, $healthRecordId: ID) {
+  attendSymptom(symptomId: $symptomId, healthRecordId: $healthRecordId) {
+    success
+    errors
+    symptom {
+      id
+      status
+    }
+  }
+}

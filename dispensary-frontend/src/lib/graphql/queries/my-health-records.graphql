@@ -1,0 +1,19 @@
+query MyHealthRecords {
+  myHealthRecords {
+    id
+    diagnosis
+    treatmentNotes
+    visitDate
+    followUpRequired
+    followUpDate
+    dispensingRecords {
+      id
+      quantityDispensed
+      dispensedAt
+      medicine {
+        name
+        unit
+      }
+    }
+  }
+}

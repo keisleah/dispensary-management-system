@@ -1,0 +1,23 @@
+mutation CreateMedicine(
+  $name: String!
+  $description: String
+  $quantityInStock: Int
+  $unit: String
+  $reorderLevel: Int
+  $expiryDate: Date
+) {
+  createMedicine(
+    name: $name
+    description: $description
+    quantityInStock: $quantityInStock
+    unit: $unit
+    reorderLevel: $reorderLevel
+    expiryDate: $expiryDate
+  ) {
+    success
+    errors
+    medicine {
+      id
+    }
+  }
+}

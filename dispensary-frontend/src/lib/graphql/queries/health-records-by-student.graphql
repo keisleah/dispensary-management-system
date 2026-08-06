@@ -1,0 +1,10 @@
+query HealthRecordsByStudent($studentId: ID!) {
+  healthRecordsByStudent(studentId: $studentId) {
+    id
+    diagnosis
+    treatmentNotes
+    visitDate
+    followUpRequired
+    followUpDate
+  }
+}

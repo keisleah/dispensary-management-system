@@ -1,0 +1,14 @@
+query MySymptoms {
+  mySymptoms {
+    id
+    description
+    severity
+    status
+    reportedAt
+    attendedAt
+    healthRecord {
+      diagnosis
+      treatmentNotes
+    }
+  }
+}

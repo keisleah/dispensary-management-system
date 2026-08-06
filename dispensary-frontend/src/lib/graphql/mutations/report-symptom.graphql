@@ -1,0 +1,13 @@
+mutation ReportSymptom($description: String!, $severity: String) {
+  reportSymptom(description: $description, severity: $severity) {
+    success
+    errors
+    symptom {
+      id
+      description
+      severity
+      status
+      reportedAt
+    }
+  }
+}
