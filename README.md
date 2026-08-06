@@ -27,7 +27,7 @@ Open a terminal and navigate to the backend folder:
 cd dispensary-backend
 ```
 
-**1. Delete the old virtual environment.
+**1. Delete the old virtual environment**
 
 ```bash
 rm -rf venv
